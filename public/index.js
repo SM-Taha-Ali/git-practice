@@ -66,12 +66,12 @@ function dark(){
         body.setAttribute('class','bg-lol')
         mainCont.setAttribute('class','container bg-lol')
         label.setAttribute('class','text-white')
-        inpTodo.blur();
         inpTodo.setAttribute('class', 'form-control bg-lol text-white')
         inpTodo.addEventListener("focus", function () {
             this.style.backgroundColor = "#31363b";
             this.style.color = "#FFFFFF"  
           });
+        inpTodo.focus();
         heading.setAttribute('class','my-3 text-white')
         for (var i=0; i<parent_ul.children.length; i++){
             parent_ul.children[i].setAttribute('class','list-group-item d-flex flex-row justify-content-between align-items-center bg-lol text-white border-white')
@@ -82,12 +82,12 @@ function dark(){
         body.setAttribute('class','bg-white')
         mainCont.setAttribute('class','container bg-white')
         label.setAttribute('class','text-black')
-        inpTodo.blur();
         inpTodo.setAttribute('class', 'form-control bg-white text-black')
         inpTodo.addEventListener("focus", function () {
             this.style.backgroundColor = "#FFFFFF";
             this.style.color = "#000000"  
           });
+        inpTodo.focus();
         heading.setAttribute('class','my-3 text-black')
         for (var i=0; i<parent_ul.children.length; i++){
             parent_ul.children[i].setAttribute('class','list-group-item d-flex flex-row justify-content-between align-items-center bg-white text-black border-secondary')
